@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="project">
+        <email>hello@deno.com</email>
+        <name>Deno Land Inc</name>
+    </maintainer>
+    <use>
+        <flag name="fish-completion">
+            Enable fish completion support
+        </flag>
+    </use>
+    <upstream>
+        <bugs-to>https://github.com/denoland/deno/issues</bugs-to>
+        <remote-id type="github">denoland/deno</remote-id>
+    </upstream>
+</pkgmetadata>
