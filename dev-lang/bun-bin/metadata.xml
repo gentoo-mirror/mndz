@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="project">
+        <email>hello@oven.sh</email>
+        <name>Oven</name>
+    </maintainer>
+    <use>
+        <flag name="debug">
+            Install debug build, more information will be shown if a crash occurs
+        </flag>
+        <flag name="fish-completion">
+            Enable fish completion support
+        </flag>
+    </use>
+    <upstream>
+        <bugs-to>https://github.com/oven-sh/bun/issues</bugs-to>
+        <remote-id type="github">oven-sh/bun</remote-id>
+    </upstream>
+</pkgmetadata>
