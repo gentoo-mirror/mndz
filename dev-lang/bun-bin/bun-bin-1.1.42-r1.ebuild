@@ -118,6 +118,8 @@ SRC_URI="
 
 BDEPEND="app-arch/unzip"
 
+QA_PREBUILT="*"
+
 bun_bin_dirname() {
     local elibc
     if use elibc_glibc; then
