@@ -29,6 +29,8 @@ SRC_URI="
 
 BDEPEND="app-arch/unzip"
 
+QA_PREBUILT="*"
+
 S="${WORKDIR}"
 
 src_compile() {
