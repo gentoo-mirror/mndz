@@ -63,17 +63,21 @@ SRC_URI="
             cpu_flags_x86_avx2? (
                 debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 musl 1 1).zip
+                        -> ${PN}-${PV}-amd64-musl-profile.zip
                 )
                 !debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 musl 1 0).zip
+                        -> ${PN}-${PV}-amd64-musl.zip
                 )
             )
             !cpu_flags_x86_avx2? (
                 debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 musl 0 1).zip
+                        -> ${PN}-${PV}-amd64-musl-baseline-profile.zip
                 )
                 !debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 musl 0 0).zip
+                        -> ${PN}-${PV}-amd64-musl-baseline.zip
                 )
             )
         )
@@ -81,17 +85,21 @@ SRC_URI="
             cpu_flags_x86_avx2? (
                 debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 glibc 1 1).zip
+                        -> ${PN}-${PV}-amd64-profile.zip
                 )
                 !debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 glibc 1 0).zip
+                        -> ${PN}-${PV}-amd64.zip
                 )
             )
             !cpu_flags_x86_avx2? (
                 debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 glibc 0 1).zip
+                        -> ${PN}-${PV}-amd64-baseline-profile.zip
                 )
                 !debug? (
                     ${BASE_URI}/$(bun_bin_filename_prefix amd64 glibc 0 0).zip
+                        -> ${PN}-${PV}-amd64-baseline.zip
                 )
             )
         )
@@ -100,17 +108,21 @@ SRC_URI="
         elibc_musl? (
             debug? (
                 ${BASE_URI}/$(bun_bin_filename_prefix arm64 musl 1 1).zip
+                    -> ${PN}-${PV}-arm64-musl-profile.zip
             )
             !debug? (
                 ${BASE_URI}/$(bun_bin_filename_prefix arm64 musl 1 0).zip
+                    -> ${PN}-${PV}-arm64-musl.zip
             )
         )
         !elibc_musl? (
             debug? (
                 ${BASE_URI}/$(bun_bin_filename_prefix arm64 glibc 1 1).zip
+                    -> ${PN}-${PV}-arm64-profile.zip
             )
             !debug? (
                 ${BASE_URI}/$(bun_bin_filename_prefix arm64 glibc 1 0).zip
+                    -> ${PN}-${PV}-arm64.zip
             )
         )
     )
