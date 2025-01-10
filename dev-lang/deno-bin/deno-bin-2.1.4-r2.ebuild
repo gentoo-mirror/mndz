@@ -23,8 +23,14 @@ DEPEND="
 
 BASE_URI="https://github.com/denoland/${DENO_PN}/releases/download/v${PV}"
 SRC_URI="
-    amd64? ( ${BASE_URI}/${DENO_PN}-x86_64-unknown-linux-gnu.zip )
-    arm64? ( ${BASE_URI}/${DENO_PN}-aarch64-unknown-linux-gnu.zip )
+    amd64? (
+        ${BASE_URI}/${DENO_PN}-x86_64-unknown-linux-gnu.zip
+            -> ${PN}-${PV}-amd64.zip
+    )
+    arm64? (
+        ${BASE_URI}/${DENO_PN}-aarch64-unknown-linux-gnu.zip
+            -> ${PN}-${PV}-arm64.zip
+    )
 "
 
 BDEPEND="app-arch/unzip"
