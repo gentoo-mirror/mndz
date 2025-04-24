@@ -1,2 +1,2 @@
-dev-lang/bun-bin 1.1.42-r2 1.1.43 1.1.44 1.1.45 1.2.0 1.2.1 1.2.2 1.2.3 1.2.4 1.2.5: Incredibly fast JavaScript runtime, bundler, test runner, and package manager
-dev-lang/deno-bin 2.1.4-r2 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5: A modern runtime for JavaScript and TypeScript
+dev-lang/bun-bin 1.1.42-r2 1.1.43 1.1.44 1.1.45 1.2.0 1.2.1 1.2.2 1.2.3 1.2.4 1.2.5 1.2.6 1.2.7 1.2.8 1.2.9 1.2.10: Incredibly fast JavaScript runtime, bundler, test runner, and package manager
+dev-lang/deno-bin 2.1.4-r2 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8 2.2.9 2.2.10 2.2.11: A modern runtime for JavaScript and TypeScript
